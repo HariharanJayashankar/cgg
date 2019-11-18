@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Clarida et~al.(2000)Clarida, Gali, and Gertler]{clarida2000}
+Richard Clarida, Jordi Gali, and Mark Gertler.
+\newblock Monetary policy rules and macroeconomic stability: evidence and some
+  theory.
+\newblock \emph{The Quarterly journal of economics}, 115\penalty0 (1):\penalty0
+  147--180, 2000.
+
+\end{thebibliography}

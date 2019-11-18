@@ -1,0 +1,71 @@
+\documentclass[a4paper 12pt]{article}
+\usepackage[hmargin=1.2in,vmargin=1in]{geometry}
+%\usepackage[latin1]{inputenc}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{array}
+\usepackage{bbm}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage[colorlinks=false,urlcolor=blue]{hyperref}
+\usepackage{amsfonts} % Worcester's
+\usepackage{appendix} %Added Jan 2012
+\usepackage{graphicx,caption}
+\usepackage{subcaption}
+\usepackage[authoryear,round]{natbib}
+\usepackage{endnotes}
+\usepackage{amsmath, amssymb,epstopdf,sgame,booktabs}
+\usepackage{ntheorem}
+%\usepackage{amssymb,mathrsfs,multirow,sgame,lscape,subfig,enumitem,float,array,booktabs}
+\usepackage{amssymb,mathrsfs,multirow,sgame,pdflscape,float,array,booktabs}
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{subfloat}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{mathtools}
+
+\title{Monetary Policy Rules - Some Notes}
+\author{\href{https://hariharanjayashankar.github.io/}{Hariharan Jayashankar}}
+
+\begin{document}
+
+\maketitle
+
+\section{Overview}
+
+This is a document detailing some of the small things I learnt from \citet{clarida2000}. Specifically what I learnt from the model at the end depicting sunspot shocks. This is a very small part of the paper which mainly serves to elucidate why the empirical results might be important. But while going through what should've been a simple model, I found somethings a bit puzzling in the IRFs.
+
+The model is a simple New Keynesian model characterized by 4 equations in equilibrium:
+\begin{align}
+\pi_t =& \delta \mathbb{E}\{\pi{_t+1} | \Omega_t\} + \lambda (y_t - z_t) \\
+y_t =& \mathbb{E}[y_{t+1} | \Omega_t] - \frac{1}{\sigma}(r_t - \mathbb{E}[\pi_{t+1} | \Omega_t]) + g_t \\
+r_t^* =& \beta \mathbb{E}[\pi_{t+1} | \Omega_t] + \gamma x_t \\
+r_t =& \rho r_t + (1 - \rho) r_t^*
+\end{align}
+
+Where $\pi_t$ is the inflation rate at time $t$, $y_t$ is the output at $t$. $z_t$ is the natural rate of output at $t$, $x_t \coloneqq y_t - z_t$. $g_t$ is some exogenous demand factor. We assume $g_t$ and $z_t$ both follow a stationary AR(1) process.
+
+
+\bibliography{references}
+\bibliographystyle{plainnat}
+
+
+\end{document}
