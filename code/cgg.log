@@ -1,0 +1,110 @@
+Starting Dynare (version 4.5.6).
+Starting preprocessing of the model file ...
+Found 8 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+vpi   		 -4.44659e-323
+pie   		 0
+y     		 -1.97626e-323
+z     		 -8.89318e-323
+r     		 9.88131e-324
+g     		 -3.95253e-323
+rstar 		 -1.97626e-323
+x     		 -3.95253e-323
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0
+Equation number 2 : 0
+Equation number 3 : 0
+Equation number 4 : 0
+Equation number 5 : 0
+Equation number 6 : 0
+Equation number 7 : 0
+Equation number 8 : 0
+
+
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+          0.5669           0.5669                0
+             0.9              0.9                0
+             0.9              0.9                0
+            0.95             0.95                0
+           1.199            1.199                0
+
+
+There are 1 eigenvalue(s) larger than 1 in modulus 
+for 1 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         8
+  Number of stochastic shocks: 1
+  Number of state variables:   4
+  Number of jumpers:           1
+  Number of static variables:  3
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables     eps_pie
+eps_pie      0.462400
+
+POLICY AND TRANSITION FUNCTIONS
+                                 vpi             pie               y               z               r               g           rstar               x
+pie(-1)                     0.261776        0.950000       -1.819080               0        0.450831               0        1.408848       -1.819080
+z(-1)                      -0.090152               0        0.599494        0.900000       -0.025964               0       -0.081137       -0.300506
+r(-1)                      -0.392689               0       -1.308965               0        0.566905               0       -0.353420       -1.308965
+g(-1)                       0.901519               0        3.005063               0        0.259637        0.900000        0.811367        3.005063
+eps_pie                    -0.275554       -1.000000        1.914821               0       -0.474559               0       -1.482998        1.914821
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+vpi           -0.0000     0.4081     0.1666
+pie            0.0000     2.1777     4.7426
+y             -0.0000     7.0433    49.6074
+z             -0.0000     0.0000     0.0000
+r              0.0000     2.2908     5.2477
+g             -0.0000     0.0000     0.0000
+rstar         -0.0000     2.4957     6.2286
+x             -0.0000     7.0433    49.6074
+
+
+
+MATRIX OF CORRELATIONS
+Variables       vpi     pie       y       r   rstar       x
+vpi          1.0000 -0.5769  0.6985 -0.7356 -0.4745  0.6985
+pie         -0.5769  1.0000 -0.9875  0.9777  0.9927 -0.9875
+y            0.6985 -0.9875  1.0000 -0.9986 -0.9613  1.0000
+r           -0.7356  0.9777 -0.9986  1.0000  0.9453 -0.9986
+rstar       -0.4745  0.9927 -0.9613  0.9453  1.0000 -0.9613
+x            0.6985 -0.9875  1.0000 -0.9986 -0.9613  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order         1       2       3       4       5
+vpi      0.8156  0.6986  0.6205  0.5650  0.5229
+pie      0.9500  0.9025  0.8574  0.8145  0.7738
+y        0.9805  0.9488  0.9112  0.8712  0.8308
+r        0.9859  0.9570  0.9207  0.8812  0.8409
+rstar    0.9138  0.8475  0.7935  0.7472  0.7061
+x        0.9805  0.9488  0.9112  0.8712  0.8308
+Total computing time : 0h00m02s
